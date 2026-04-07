@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
 import Button from "@/components/ui/Button";
 import SectionTitle from "@/components/ui/SectionTitle";
 import MiniDashboard from "@/components/ui/MiniDashboard";
 import AnalysesMagazine from "@/components/ui/AnalysesMagazine";
 import SocialSlider from "@/components/ui/SocialSlider";
 import WhyDifferent from "@/components/ui/WhyDifferent";
+
+export const metadata: Metadata = {
+  title: "الرئيسية | MDA",
+  description: "الصفحة الرئيسية لمنصة MDA لتحليل كرة القدم: تكتيك، بيانات، وفيديو.",
+  openGraph: {
+    title: "الرئيسية | MDA",
+    description: "اكتشف أحدث التحليلات التكتيكية والرقمية في كرة القدم.",
+    locale: "ar_AR"
+  }
+};
 
 export default function HomePage() {
   return (

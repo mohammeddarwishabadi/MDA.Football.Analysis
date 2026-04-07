@@ -26,16 +26,16 @@ model Team {
 }
 
 model Player {
-  id         String @id @default(cuid())
-  name       String
-  team       Team?  @relation(fields: [teamId], references: [id])
-  teamId     String?
-  position   String?
-  goals      Int    @default(0)
-  assists    Int    @default(0)
-  xG         Float  @default(0)
-  keyPasses  Int    @default(0)
-  bestIn     Match[]
+  id        String @id @default(cuid())
+  name      String
+  team      Team?  @relation(fields: [teamId], references: [id])
+  teamId    String?
+  position  String?
+  goals     Int    @default(0)
+  assists   Int    @default(0)
+  xG        Float  @default(0)
+  keyPasses Int    @default(0)
+  bestIn    Match[]
 }
 
 model Match {
@@ -74,5 +74,14 @@ model HighlightNumber {
   id        String   @id @default(cuid())
   label     String
   value     String
+  createdAt DateTime @default(now())
+}
+
+model Video {
+  id        String   @id @default(cuid())
+  title     String
+  url       String
+  thumbnail String?
+  platform  String
   createdAt DateTime @default(now())
 }

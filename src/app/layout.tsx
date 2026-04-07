@@ -6,7 +6,13 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "MDA — FOOTBALL ANALYSIS",
-  description: "منصة تحليل كرة القدم"
+  description: "منصة MDA لتحليل كرة القدم عبر البيانات والتكتيك والمحتوى المرئي.",
+  openGraph: {
+    title: "MDA — FOOTBALL ANALYSIS",
+    description: "تحليلات كرة قدم احترافية باللغة العربية مبنية على الأرقام والتكتيك.",
+    locale: "ar_AR",
+    type: "website"
+  }
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
