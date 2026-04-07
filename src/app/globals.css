@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0d2a1f;
+  color: #ffffff;
+}
+
+* {
+  border-color: rgba(217, 199, 163, 0.2);
+}
